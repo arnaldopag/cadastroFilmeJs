@@ -27,7 +27,7 @@ function cadastrar(){
 
 function mostrar(cont){
     cont -= 1 
-     for(let i = 0; i<=cont; i++){
+     for(let i = 1; i<=cont; i++){
         console.log(filmes[i])
     }
 }
