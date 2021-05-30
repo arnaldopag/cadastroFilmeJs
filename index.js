@@ -26,8 +26,19 @@ function cadastrar(){
 }
 
 function mostrar(cont){
-    cont -= 1 
+    cont -= 0
+    let img  = document.createElement('img')
+    let nome = document.createElement('h1')
+    let descricao = document.createElement('p')
+
      for(let i = 1; i<=cont; i++){
-        console.log(filmes[i])
+        img.src = filmes[i].url
+        nome.textContent = filmes[i].nome
+        descricao.textContent = filmes[i].estilo
+        
     }
+    document.body.appendChild(img)
+    document.body.appendChild(nome)
+    document.body.appendChild(descricao)
+    console.log(filmes.nome)
 }
